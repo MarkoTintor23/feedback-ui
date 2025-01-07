@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* width: 300px; */
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rating {
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f0f0f0; /* Neutralna boja za smajliće */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating:hover {
+  transform: scale(1.1);
+  background-color: #d1e7ff; /* Svetlo plava boja pri hoveru */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Blaga senka pri hoveru */
+}
+
+.rating.active {
+  background-color: #ffeb3b; /* Suptilna žuta boja za aktivni state */
+  color: #333; /* Tamno siva boja za tekst */
+  transform: scale(1.2); /* Povećavanje smajlića */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Veća senka za aktivni state */
+}
+
+.rating span {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 2rem;
+  flex-direction: row; /* Postavi smajliće da budu vodoravno */
+}
+
+.hidden {
+  display: none;
+}
+
+#thank-you {
+  text-align: center;
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-top: 2rem;
+}
+
+#thank-you h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#thank-you p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+#selected-feedback {
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+.hidden {
+  display: none;
+}
+
+.send-review {
+  background-color: #ffeb3b;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.send-review:hover {
+  background-color: #ffeb3b;
+}

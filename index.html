@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>How satisfied are you with our service?</h1>
+      <div class="ratings">
+        <div class="rating" data-feedback="Very Satisfied">
+          😊
+          <span>Very Satisfied</span>
+        </div>
+        <div class="rating" data-feedback="Satisfied">
+          🙂
+          <span>Satisfied</span>
+        </div>
+        <div class="rating" data-feedback="Neutral">
+          😐
+          <span>Neutral</span>
+        </div>
+        <div class="rating" data-feedback="Unsatisfied">
+          🙁
+          <span>Unsatisfied</span>
+        </div>
+        <div class="rating" data-feedback="Very Unsatisfied">
+          😡
+          <span>Very Unsatisfied</span>
+        </div>
+      </div>
+      <button class="send-review">Send Review</button>
+    </div>
+
+    <div id="thank-you" class="hidden">
+      <h2>Thank You for Your Feedback!</h2>
+      <p id="selected-feedback"><strong>Feedback: </strong></p>
+      <p>We will use your feedback to improve our customer service.</p>
+    </div>
+  </body>
+</html>
